@@ -6,6 +6,7 @@ import Resume from './pages/Resume';
 // import Contact from './pages/Contact';
 import '../styles/font.css'
 import Footer from './Footer'
+import Picture from '../assets/jqPic.jpg';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -50,6 +51,10 @@ export default function PortfolioContainer() {
     },
     footHeight: {
       height: "130px",
+    },
+    imgSize: {
+      height: "100%",
+      width: "80%",
     }
 }
 
@@ -57,8 +62,8 @@ export default function PortfolioContainer() {
     <div className="arimo">
       <div className="container-fluid" style={{...styles.height, ...styles.background}}>
         <div className="row h-100">
-          <div className="col-sm h-100 border">
-            <div className="border w-75 h-75 mx-auto bg-light"  style={styles.marginTop}>picture of me</div>
+          <div className="col-sm h-100">
+            <div className="border w-50 h-75 mx-auto bg-light text-center"  style={styles.marginTop}><div className="h-100 w-100"><img src={Picture} alt="pic of me" style={styles.imgSize}></img></div></div>
           </div>
           <div className="my-auto col-sm">
             <h1 className="anybody text-end" style={{...styles.fontSizing, ...styles.fontColor}}>Julian<br></br>Quan Fun</h1>
