@@ -54,7 +54,7 @@ export default function PortfolioContainer() {
     },
     imgSize: {
       height: "100%",
-      width: "80%",
+      width: "75%",
     }
 }
 
@@ -78,13 +78,4 @@ export default function PortfolioContainer() {
       <Footer />
     </div>
   );
-}
-
-// choose font
-// margins
-// colors
-// photo area in heading
-// card formatting
-// hover effect over projects
-// footer
-// contact form
+};
