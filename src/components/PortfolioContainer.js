@@ -54,7 +54,11 @@ export default function PortfolioContainer() {
     },
     imgSize: {
       height: "100%",
-      width: "75%",
+      width: "70%",
+    },
+    imgDiv: {
+      background: "#292d2e",
+      marginTop: '63px',
     }
 }
 
@@ -63,7 +67,7 @@ export default function PortfolioContainer() {
       <div className="container-fluid" style={{...styles.height, ...styles.background}}>
         <div className="row h-100">
           <div className="col-sm h-100">
-            <div className="border w-50 h-75 mx-auto bg-light text-center"  style={styles.marginTop}><div className="h-100 w-100"><img src={Picture} alt="pic of me" style={styles.imgSize}></img></div></div>
+            <div className="border-dark w-50 h-75 mx-auto text-center"  style={styles.imgDiv}><div className="h-100 w-100"><img src={Picture} alt="pic of me" style={styles.imgSize}></img></div></div>
           </div>
           <div className="my-auto col-sm">
             <h1 className="anybody text-end" style={{...styles.fontSizing, ...styles.fontColor}}>Julian<br></br>Quan Fun</h1>

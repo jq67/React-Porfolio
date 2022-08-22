@@ -11,6 +11,7 @@ import noteTaker from '../../project_images/noteTaker.png';
 import pGen from '../../project_images/passwordGenerator.png';
 import bookSearch from '../../project_images/bookSearch.png';
 import stateRedux from '../../project_images/stateRedux.png';
+import pythonNews from '../../project_images/pythonNews.png';
 
 
 export default function Portfolio() {
@@ -127,6 +128,19 @@ export default function Portfolio() {
       </Carousel.Item>
 
       <Carousel.Item>
+      <a href="https://python-newsapp.herokuapp.com//"><img
+          className="mx-auto d-block w-100"
+          src={pythonNews}
+          alt="Eigth slide"
+          style={styles.imgStyle}
+        /></a>
+        <Carousel.Caption className="text-dark bg-light" style={styles.captionStyle}>
+          <h1 className="text-dark anybody m-4">Python News app</h1>
+          <p className="text-dark">An app that was refactored from using node to use python and various python libraries to handle the backend and routes.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
       <a href="https://whatsfordinner-v2.herokuapp.com/"><img
           className="mx-auto d-block w-100"
           src={WFD}
@@ -153,7 +167,6 @@ export default function Portfolio() {
       </Carousel.Item>
 
     </Carousel>
-    {/* <div style={styles.footHeight}></div> */}
     </div>
   );
 }
